@@ -1,0 +1,303 @@
+# Proje Adı: Web Sayfası Tasarımı
+
+ Bu proje, modern ve duyarlı bir web sayfası tasarımı içerir. Proje, temel HTML, CSS ve JavaScript kullanarak bir web sitesinin ana sayfasını, blog, hakkında bölümünü ve iletişim sayfasını oluşturmayı amaçlamaktadır.
+
+## İçindekiler
+
+- [Özellikler](#özellikler)
+- [Kurulum](#kurulum)
+- [Kullanım](#kullanım)
+- [Katkıda Bulunma](#katkıda-bulunma)
+- [Lisans](#lisans)
+- [İletişim](#iletişim)
+
+## Özellikler
+
+- **Duyarlı Tasarım**: Görsellik, mobil uyumluluk, kullanıcı deneyimi.
+- **Modern Görünüm**: Modern tasarım öğeleri ve renk şeması.
+- **Kolay Düzenlenebilirlik**: Basit ve anlaşılır kod yapısı.
+
+## Kurulum
+
+Proje paylaşılan link ile kolay bir şekilde kurulabilir. 
+
+### Gereksinimler
+
+- Bir web tarayıcısı (Chrome, Firefox, Safari, vb.)
+- Metin editörü (Brackets, Visual Studio Code, Sublime Text, vb.)
+
+### Adımlar
+
+1. Adım 1: Projeyi klonlayın.
+
+2. Adım 2: Proje dizinine gidin.
+ 
+3. Adım 3: Web tarayıcınızda `index.html` ve 'style.css' dosyalarını açın.
+
+## Kullanım
+
+HTML, CSS dosyalarını düzenleyerek web sayfasını özelleştirebilirsiniz. 
+
+```css
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+}
+#menu{
+    height: 80px;
+    padding: 0 20px;
+}
+#logo{
+    font-size: 30px;
+    line-height: 80px;
+    color: darkblue;
+    float: left;
+}
+nav{
+    float: right;
+    line-height: 80px;
+}
+nav a:link{
+    text-decoration: none;
+    margin-right: 25px;
+    color: darkblue;
+}
+nav a:hover{
+    border-bottom: 2px solid darkblue;
+}
+nav a:visited{
+    text-decoration: none;
+    margin-right: 25px;
+    color: darkblue;
+}
+.ikon{
+    margin-right: 7px;
+    font-size: 16px;
+}
+#anasayfa{
+    height: 600px;
+    background-image: url("../Resimler/veribilimi.webp");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+#black{
+    height: 600px;
+    background-color: black;
+    opacity: 0.5;
+}
+#içerik{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+}
+#hakkımda{
+    background-color: #f8f9fa;
+    padding: 50px;
+    text-align: center;
+    font-weight: 600;
+}
+h3{
+    font-size: 55px;
+    color: grey;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+}
+.container{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+}
+#sol{
+    float: left;
+    border-right: 3px solid #445c6e;
+    font-size: 30px;
+    width: 400px;
+    color: #445c6e;
+}
+#h5sol{
+    line-height: 1.6;
+    font-size: 25px;
+    font-weight: 600;
+    color: #445c6e;
+}
+#h5sol, #sag{
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+}
+span{
+    font-size: 50px;
+    margin-right: 7px;
+    line-height: 42px;
+    color: #003666;
+    font-weight: 600;
+    float: left;
+}
+#sag{
+    float: right;
+    width: 750px;
+    color: #003666;
+    text-align: left;
+    letter-spacing: 1px;
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 400;
+}
+.img-fluid{
+    max-width: 90%;
+    height: auto;
+}
+.mt100{
+    margin-top: 10px;
+}
+#pson{
+    color: #003666;
+    letter-spacing: 1px;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-top: 30px;
+    font-weight: 600;
+}
+#blog{
+    background-color: #fff;
+    padding: 50px;
+    text-align: center;
+    height: 700px;
+}
+.card{
+    width: 320px;
+    height: 350px;
+    border: 1px solid #ddd;
+    padding: 0;
+    display: inline-block;
+}
+.baslikcard{
+    font-size: 25px;
+    color: #003666;
+}
+.cardp{
+    color: #888;
+}
+.card:hover{
+    border: 2px solid grey;
+}
+.card-item{
+    width: 300px;
+}
+.cardp{
+    color: black;
+    font-size: 20px;
+}
+.social{
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    width: 50px;
+    border-radius: 5px;
+    margin: 5px 10px;
+}
+.social:hover{
+    background-color: darkgrey;
+}
+#iletisim{
+    background: url("../Resimler/cc.jpg");
+    background-size: cover;
+    padding: 50px;
+    height: 1000px;
+    text-align: center;
+    width: 100%;
+}
+#h3iletisim{
+    color: white;
+}
+#iletisimopak{
+    background: rgba(255,255,255,0.2);
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    height: 550px;
+    pointer-events: auto;
+}
+#formgroup{
+    width: 700px;
+    float: left;
+    height: 500px;
+    text-align: left;
+}
+#solform{
+    width: 50%;
+    float: left;
+    padding-right: 5px;
+}
+#sagform{
+    width: 50%;
+    float: right;
+    padding-left: 5px;
+}
+.form-control{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #495057;
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+textarea{
+    font-family: Arial;
+}
+input[type="submit"]{
+    cursor: pointer;
+    background-color: darkslateblue;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 10px 30px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+#adresbaslik{
+    font-size: 30px;
+    color: white;
+}
+.adresp{
+    color: #ddd;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+}
+#copyright{
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+}
+#up{
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    font-size: 15px;
+    padding: 8px 12px;
+    margin-top: 10px;
+}
+#up:hover{
+    background-color: darkgray;
+}
+textarea, input[type="text"], input[type="email"] {
+    position: relative;
+    z-index: 1;
+}
+#h33{
+    color: darkblue;
+}
